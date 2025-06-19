@@ -13,7 +13,9 @@ img{
     width: 100%;
     display: block;
 }
-
+/* 電腦板設定 */
+@media screen and (min-width:768px) {
+    
 .menu-toggle {
     display: none;
   
@@ -447,13 +449,442 @@ flex-direction: column;
     line-height: 25px;
     padding: 40px 100px;
 }
-
+}
 
 
 
 
 @media screen and (max-width: 767px) {
     /* 手機版開始 */
+    header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background: #000000;
+    padding: 20px 35px;
+    z-index: 999; /* 圖層最上層 */
+    border-bottom:  0.5px solid #929292;
+}
+h1.logo{
+    margin: 0;
+    width: 291px;
+    height: 25px;
+    margin-right: auto;
+    object-fit: cover;
+    background-image: url(../image/logo-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+h1.logo a{
+    display: block;
+    width: 100%;
+    height: 25px;
+    text-indent: -999px;
+    overflow: hidden;
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0px 75px;
+    display: flex;
+    gap: 31px;
+}
+nav a{
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 3px 0px;
+    transition: 0.3s;
+}
+nav a:hover{
+    color: lightgray;
+}
+.lang-switch{
+    display:inline-flex;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.lang-btn{
+padding: 5px 5px;
+border: none;
+font-size: 16px;
+color: #ffffff;
+background-color: black;
+cursor: pointer;
+transition: 0.3s;
+}
+
+.lang-switch p{
+    display: block;
+    padding: 5px;
+    color: #ffffff;
+}
+.lang-btn .active{
+    color: lightgray;
+}
+.lang-btn :hover{
+    color: lightgray;
+}
+
+
+.main image img{
+    width: 100%;
+    height: 732px;
+    object-fit: cover;
+}
+
+.about-wrap{
+display: flex;
+justify-content: center;
+
+background-color: rgb(0, 0, 0);
+
+}
+.about {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 63px;
+    background-color: #000000;
+
+}
+.about-logo img{
+    height: 100%;
+    width: 257px;
+}
+.about-carousel{
+display: flex;
+flex-direction: row;
+gap: 32px;
+}
+.about-card{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 24px;
+}
+.about-card:hover{
+transform: scale(1.1);
+transition: 0.3s;
+cursor: pointer;
+}
+.about-card img{
+    height: 100%;
+    width: 352px;
+}
+.about-title{
+    font-size: 20px;
+    font-family: Inter;
+    font-weight: 600;
+    color: #ffffff;
+}
+.about-card p{
+    color: #ffffff;
+    font-weight: 400;
+    font-family: Inter;
+    
+    
+}
+.visual{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+    background-color:#000000;
+
+}
+.visual-main img{
+    height: 100%;
+    width: 529px;
+}
+.visual-aside{
+    
+    padding-top: 115px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+    width: 575px;
+    height: 46px;
+
+}
+.visual-text{
+    display: flex;
+  flex-direction: column;
+  gap: 37px;
+}
+.visual-title h1{
+    font-size: 38px;
+    font-weight: 600;
+    color: #ffffff;
+    font-family: Inter;
+}
+.visual-intro p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+}
+.visual-carousel{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.visual-works{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.visual-works h2{
+    font-size: 28px;
+    font-family: "Inter", serif;
+    font-weight: 500;
+    color: #ffffff;
+}
+.visual-card img{
+    height: 100%;
+    width: 185px;
+}
+.project-title h1{
+    font-size: 107px;
+    font-family: "Inter", serif;
+    font-weight: 500;
+    color: #ffffff;
+}
+.project{
+    background-color: #000000;
+}
+.project-section{
+    background-color: #000000;
+    display: flex;
+    justify-content: right;
+    flex-direction: row;
+    gap: 180px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.project-arrow img{
+    height: 53px;
+    width: 490px;
+}
+.project-image{
+    height: 437px;
+    width: 624px;
+}
+.project-image:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+    cursor: pointer;
+    }
+.social{
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    padding: 110px 0px;
+}
+.social-carousel{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    justify-content: center;
+}
+.soclal-text{
+    text-align: center;
+    border-bottom: 2px solid #ffffff;
+    width: 325px;
+    margin: 0% auto;
+    
+    
+    
+}
+.soclal-text h2{
+    padding-bottom: 14px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 7px;
+    line-height: 3px;
+    
+}
+.soclal-text h3{
+    padding-bottom: 1px;
+    font-size: 32px;
+    font-family: "Inter", serif;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 3px;
+    }
+.card-container{
+    background-color:#2B2B2B;
+    width: 256px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 63px;
+    padding: 20px;
+
+}
+
+.card-items{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+.soclal-logo img{
+    height: 67px;
+    width: 67px;
+}
+
+.card-title h2{
+    font-size: 12px;
+    font-family: "Inter", serif;
+    font-weight: 700;
+    color: #ffffff;
+}
+.card-container:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+    cursor: pointer;
+    }
+.card-intro p{
+    font-size: 12px;
+    font-weight: 400;
+    color: #ffffff;
+}
+.soclal-arrow p:hover{
+    color: rgb(179, 179, 179);
+    transition: 0.3s;
+    cursor: pointer;
+}
+.soclal-arrow{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center; /* 物件對齊 */
+}
+.card-arrow{
+    width: 20px;
+    height: 100%;
+}
+.card-text p{
+    color: #ffffff;
+    font-family: Inter;
+}
+.footer{
+    background-color: #000000;
+}
+.footer-carousel{
+    display: flex;
+    flex-direction: row;
+    gap: 568px;
+    justify-content: center;
+    padding: 50px 80px;
+
+}
+.footer-text{
+    font-size: 13px;
+    font-weight: 400;
+    color: #ffffff;
+    font-family: Inter;
+}
+.footer-icon{
+    display: flex;
+   flex-direction: row;
+   gap: 20px;
+}
+.footer-logo{
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
+
+
+.about_02-music-text-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about_02-music-text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 60px 0px;
+    width: 1030px;
+    
+}
+.about_02-music-text h1{
+    font-size: 18px;
+    font-weight: 400;
+    color: #787878;
+    letter-spacing: 1px;
+}
+.about_02-music-text p{
+    font-weight: 400;
+    color: #9f9d9d;
+    line-height: 30px;
+}
+.section-about-g2{
+    display: flex;
+flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+.section-about-g{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.section-about3{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.section-about3 img{
+    height: 434px;
+    width: 1400px;
+}
+.section-about4 img{
+    height: 434px;
+    width: 1400px;
+}
+.section-about4{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.footer-text-p{
+    font-weight: 400;
+    color: #9f9d9d;
+    line-height: 25px;
+    padding: 40px 100px;
+}
+
+
+
+
+.art-img{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.art-text p{
+    font-weight: 400;
+    color: #9f9d9d;
+    line-height: 25px;
+    padding: 40px 100px;
+}
+
     .top-header{
       display: flex;
       flex-direction: row;
