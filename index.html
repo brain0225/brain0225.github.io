@@ -11,12 +11,19 @@
 </head>
 <body>
     <header>
-    
+        <div class="top-header">
         <h1 class="logo">
         <a href="#" title="logo name">logo name</a>
-    </h1>
+        
+        </h1>
+
+     <button class="menu-toggle" aria-label="Toggle menu">
+                ☰
+              </button>
+</div>
     <nav>
         <ul>
+           
             <li><a href="#">首頁</a></li>
             <li><a href="#project">專案作品</a></li>
             <li><a href="#news">最新消息</a></li>
@@ -266,5 +273,15 @@
 </div>
 
 </section>
+
+<script>
+    const toggleBtn = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav');
+  
+    toggleBtn.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+  </script>
+
 </body>
 </html>
